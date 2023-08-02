@@ -17,4 +17,9 @@ Route::get('/', 'PrincipalController@principal');
 
 Route::get('/contato', 'ContatoController@contato');
 
-Route::get('/sobrenos', 'SobreNosController@sobrenos');
+Route::get('/sobre-nos', 'SobreNosController@sobrenos');
+
+Route::get('/login', function(){'Login';});
+Route::get('/clientes', function(){'Clientes';});
+Route::get('/fornecedores', function () {'Fornecedores'; });
+Route::get('/produtos', function(){'Produtos';});
