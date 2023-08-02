@@ -19,7 +19,13 @@ Route::get('/contato', 'ContatoController@contato');
 
 Route::get('/sobre-nos', 'SobreNosController@sobrenos');
 
-Route::get('/login', function(){'Login';});
-Route::get('/clientes', function(){'Clientes';});
-Route::get('/fornecedores', function () {'Fornecedores'; });
-Route::get('/produtos', function(){'Produtos';});
+Route::prefix('/app')->group(function () {
+    Route::get('/login', function () {
+        'Login'; });
+    Route::get('/clientes', function () {
+        'Clientes'; });
+    Route::get('/fornecedores', function () {
+        'Fornecedores'; });
+    Route::get('/produtos', function () {
+        'Produtos'; });
+});
