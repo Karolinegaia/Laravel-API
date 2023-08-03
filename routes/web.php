@@ -37,5 +37,5 @@ Route::get('/rota1', function () {
 Route::get('/teste/{p1}/{p2}', 'TesteController@teste')->name('teste');
 
 Route::fallback(function () {
-    echo ('A rota acessada não existe. <a href = "'.route('site.index').'"Clique aqui</a> para retornar a página inicial');
+    echo ('A rota acessada não existe. <a href= "./">Clique aqui para retornar a página inicial</a>');
 });
