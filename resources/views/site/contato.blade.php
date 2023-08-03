@@ -1,265 +1,280 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Super Gestão - Contato</title>
-        <meta charset="utf-8">
 
-        <style>
-            html, body {
-                height: 100%;
-                margin: 0;
-                font-family: 'Roboto', sans-serif;
-            }
+<head>
+    <title>Super Gestão - Contato</title>
+    <meta charset="utf-8">
 
-            p, span {
-                color: #ffffff;
-            }
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
 
-            h1 {
-                color: #ffffff;
-                font-size: 28px;
-            }
+        p,
+        span {
+            color: #ffffff;
+        }
 
-            h2 {
-                color: #333333;
-                font-size: 22px;
-            }
+        h1 {
+            color: #ffffff;
+            font-size: 28px;
+        }
 
-            input, select, textarea, button {
-                width: 100%;
-                padding: 10px 15px;
-                margin: 10px 0px 10px 0px;
-                box-sizing: border-box;
-                border-radius: 3px;
-                background-color: transparent;
-                color: #333;
-            }
+        h2 {
+            color: #333333;
+            font-size: 22px;
+        }
 
-            .texto-branco {
-                color: #ffffff;
-            }
+        input,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px 15px;
+            margin: 10px 0px 10px 0px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            background-color: transparent;
+            color: #333;
+        }
 
-            .borda-branca {
-                border: solid 1px #fff;
-            }
+        .texto-branco {
+            color: #ffffff;
+        }
 
-            .borda-preta {
-                border: solid 1px #333;
-            }
+        .borda-branca {
+            border: solid 1px #fff;
+        }
 
-            button {
-                background-color: #7ab829;
-                cursor: pointer;
-                color: #fff;
-            }
+        .borda-preta {
+            border: solid 1px #333;
+        }
 
-            button:hover {
-                background-color: #6ea22c;
-            }
+        button {
+            background-color: #7ab829;
+            cursor: pointer;
+            color: #fff;
+        }
 
-            ::placeholder {
-                color: #333333;
-                opacity: 1;
-            }
+        button:hover {
+            background-color: #6ea22c;
+        }
 
-            :-ms-input-placeholder {
-                color: #333333;
-            }
+        ::placeholder {
+            color: #333333;
+            opacity: 1;
+        }
 
-            ::-ms-input-placeholder {
-                color: #333333;
-            }
+        :-ms-input-placeholder {
+            color: #333333;
+        }
 
-            .topo {
-                width: 100%;
-                background-color: #f8f8f8;
-                position: absolute;
-                padding: 20px 0px 10px 0px;
-            }
+        ::-ms-input-placeholder {
+            color: #333333;
+        }
 
-            .logo {
-                width: 50px;
-                float: left;
-                margin-left: 40px;
-            }
+        .topo {
+            width: 100%;
+            background-color: #f8f8f8;
+            position: absolute;
+            padding: 20px 0px 10px 0px;
+        }
 
-            .menu {
-                float: right;
-                margin-right: 40px;
-            }
+        .logo {
+            width: 50px;
+            float: left;
+            margin-left: 40px;
+        }
 
-            .menu li {
-                display: inline;
-                float: left;
-            }
+        .menu {
+            float: right;
+            margin-right: 40px;
+        }
 
-            .menu ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
+        .menu li {
+            display: inline;
+            float: left;
+        }
 
-            .menu a {
-                text-decoration: none;
-                padding: 14px 16px;
-                color: #333;
-            }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
 
-            .menu a:hover {
-                color: #268fd0;
-            }
+        .menu a {
+            text-decoration: none;
+            padding: 14px 16px;
+            color: #333;
+        }
 
-            .conteudo-destaque {
-                width: 100%;
-                height: 100%;
-                min-height: 800px;
-            }
+        .menu a:hover {
+            color: #268fd0;
+        }
 
-            .esquerda {
-                float:left;
-                background-color: #268fd0;
-                width: 60%;
-                height: 100%;
-            }
+        .conteudo-destaque {
+            width: 100%;
+            height: 100%;
+            min-height: 800px;
+        }
 
-            .direita {
-                float:right;
-                background-color: #2a9ee2;
-                width: 40%;
-                height: 100%;
-            }
+        .esquerda {
+            float: left;
+            background-color: #268fd0;
+            width: 60%;
+            height: 100%;
+        }
 
-            .informacoes, .contato {
-                margin: 100px 40px 40px 40px;
-            }
+        .direita {
+            float: right;
+            background-color: #2a9ee2;
+            width: 40%;
+            height: 100%;
+        }
 
-            .contato-principal {
-                margin: 0px 60px 60px 40px;
-            }
+        .informacoes,
+        .contato {
+            margin: 100px 40px 40px 40px;
+        }
 
-            .chamada {
-                margin-top: 30px;
-                margin-left: 20px;
-            }
+        .contato-principal {
+            margin: 0px 60px 60px 40px;
+            width: 40rem
+        }
 
-            .video {
-                margin: 40px;
-            }
+        .chamada {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
 
-            .video img {
-                max-width: 100%;
-                max-height: 100%;
-            }
+        .video {
+            margin: 40px;
+        }
 
-            .conteudo-pagina {
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                margin-bottom: 100px;
-            }
+        .video img {
+            max-width: 100%;
+            max-height: 100%;
+        }
 
-            .titulo-pagina {
-                padding: 100px 0px 60px 0px;
-                background-color: #2a9ee2;
-                text-align: center;
-            }
+        .conteudo-pagina {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin-bottom: 100px;
+        }
 
-            .informacao-pagina {
-                text-align: center;
-                margin-top: 30px;
-            }
+        .titulo-pagina {
+            padding: 100px 0px 60px 0px;
+            background-color: #2a9ee2;
+            text-align: center;
+        }
 
-            .informacao-pagina p{
-                color: #333;
-            }
+        .informacao-pagina {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
 
-            .rodape {
-                width: 100%;
-            }
+        .informacao-pagina p {
+            color: #333;
+        }
 
-            .redes-sociais, .area-contato, .localizacao {
-                width: 33.333%;
-                border-top:solid 1px #ccc;
-                float: left;
-                text-align: center;
-                background-color: #f8f8f8;
-                height: 250px;
-            }
+        .rodape {
+            width: 100%;
+        }
 
-            .redes-sociais, .area-contato, .localizacao p, span {
-                color: #333333;
-            }
+        .redes-sociais,
+        .area-contato,
+        .localizacao {
+            width: 33.333%;
+            border-top: solid 1px #ccc;
+            float: left;
+            text-align: center;
+            background-color: #f8f8f8;
+            height: 250px;
+        }
 
-            .redes-sociais img {
-                margin: 0px 15px 0px 15px;
-            }
+        .redes-sociais,
+        .area-contato,
+        .localizacao p,
+        span {
+            color: #333333;
+        }
 
-        </style>
-    </head>
+        .redes-sociais img {
+            margin: 0px 15px 0px 15px;
+        }
+    </style>
+</head>
 
-    <body>
-        <div class="topo">
+<body>
+    <div class="topo">
 
-            <div class="logo">
-                <img src="img/logo.png">
-            </div>
-
-            <div class="menu">
-                <ul>
-                    <li><a href="{{ route('site.index') }}">Principal</a></li>
-                    <li><a href="{{ route('site.sobrenos') }}">Sobre Nós</a></li>
-                    <li><a href="{{ route('site.contato') }}">Contato</a></li>
-                </ul>
-            </div>
+        <div class="logo">
+            <img src="img/logo.png">
         </div>
 
-        <div class="conteudo-pagina">
-            <div class="titulo-pagina">
-                <h1>Entre em contato conosco</h1>
-            </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{{ route('site.index') }}">Principal</a></li>
+                <li><a href="{{ route('site.sobrenos') }}">Sobre Nós</a></li>
+                <li><a href="{{ route('site.contato') }}">Contato</a></li>
+            </ul>
+        </div>
+    </div>
 
-            <div class="informacao-pagina">
-                <div class="contato-principal">
-                    <form>
-                        <input type="text" placeholder="Nome" class="borda-preta">
-                        <br>
-                        <input type="text" placeholder="Telefone" class="borda-preta">
-                        <br>
-                        <input type="text" placeholder="E-mail" class="borda-preta">
-                        <br>
-                        <select class="borda-preta">
-                            <option value="">Qual o motivo do contato?</option>
-                            <option value="">Dúvida</option>
-                            <option value="">Elogio</option>
-                            <option value="">Reclamação</option>
-                        </select>
-                        <br>
-                        <textarea class="borda-preta">Preencha aqui a sua mensagem</textarea>
-                        <br>
-                        <button type="submit" class="borda-preta">ENVIAR</button>
-                    </form>
-                </div>
-            </div>
+    <div class="conteudo-pagina">
+        <div class="titulo-pagina">
+            <h1>Entre em contato conosco</h1>
         </div>
 
-        <div class="rodape">
-            <div class="redes-sociais">
-                <h2>Redes sociais</h2>
-                <img src="{{asset('img/facebook.png')}}">
-                <img src="{{asset('img/linkedin.png')}}">
-                <img src="{{asset('img/youtube.png')}}">
-            </div>
-            <div class="area-contato">
-                <h2>Contato</h2>
-                <span>(11) 3333-4444</span>
-                <br>
-                <span>supergestao@dominio.com.br</span>
-            </div>
-            <div class="localizacao">
-                <h2>Localização</h2>
-                <img src="{{asset('img/mapa.png')}}">
+        <div class="informacao-pagina">
+            <div class="contato-principal">
+                <form>
+                    <input type="text" placeholder="Nome" class="borda-preta" type="text">
+                    <br>
+                    <input type="text" placeholder="Telefone" class="borda-preta" type="tel">
+                    <br>
+                    <input type="text" placeholder="E-mail" class="borda-preta" type="email">
+                    <br>
+                    <select class="borda-preta">
+                        <option value="">Qual o motivo do contato?</option>
+                        <option value="">Dúvida</option>
+                        <option value="">Elogio</option>
+                        <option value="">Reclamação</option>
+                    </select>
+                    <br>
+                    <textarea class="borda-preta" placeholder="Preencha aqui sua informação!"></textarea>
+                    <br>
+                    <button type="submit" class="borda-preta">ENVIAR</button>
+                </form>
             </div>
         </div>
-    </body>
+    </div>
+
+    <div class="rodape">
+        <div class="redes-sociais">
+            <h2>Redes sociais</h2>
+            <img src="{{ asset('img/facebook.png') }}">
+            <img src="{{ asset('img/linkedin.png') }}">
+            <img src="{{ asset('img/youtube.png') }}">
+        </div>
+        <div class="area-contato">
+            <h2>Contato</h2>
+            <span>(11) 3333-4444</span>
+            <br>
+            <span>supergestao@dominio.com.br</span>
+        </div>
+        <div class="localizacao">
+            <h2>Localização</h2>
+            <img src="{{ asset('img/mapa.png') }}">
+        </div>
+    </div>
+</body>
+
 </html>
