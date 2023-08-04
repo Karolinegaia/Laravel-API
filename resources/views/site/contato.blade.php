@@ -3,7 +3,7 @@
 @section('titulo', $titulo)
 @section('conteudo')
  @include('site.layouts._partials.topo')
- 
+
     <div class="conteudo-pagina">
         <div class="titulo-pagina">
             <h1>Entre em contato conosco</h1>
@@ -11,21 +11,22 @@
 
         <div class="informacao-pagina">
             <div class="contato-principal">
-                <form>
-                    <input type="text" placeholder="Nome" class="borda-preta" type="text">
+                <form action={{ route('site.contato')}} method="post">
+                    @csrf
+                    <input name="nome" type="text" placeholder="Nome" class="borda-preta" type="text">
                     <br>
-                    <input type="text" placeholder="Telefone" class="borda-preta" type="tel">
+                    <input name="telefone" type="text" placeholder="Telefone" class="borda-preta" type="tel">
                     <br>
-                    <input type="text" placeholder="E-mail" class="borda-preta" type="email">
+                    <input name="motivo_contato" type="text" placeholder="E-mail" class="borda-preta" type="email">
                     <br>
                     <select class="borda-preta">
                         <option value="">Qual o motivo do contato?</option>
-                        <option value="">Dúvida</option>
-                        <option value="">Elogio</option>
-                        <option value="">Reclamação</option>
+                        <option value="1">Dúvida</option>
+                        <option value="2">Elogio</option>
+                        <option value="3">Reclamação</option>
                     </select>
                     <br>
-                    <textarea class="borda-preta" placeholder="Preencha aqui sua informação!"></textarea>
+                    <textarea name="mensagem" class="borda-preta" placeholder="Preencha aqui sua informação!"></textarea>
                     <br>
                     <button type="submit" class="borda-preta">ENVIAR</button>
                 </form>
