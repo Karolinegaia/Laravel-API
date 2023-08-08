@@ -11,7 +11,7 @@
 
         <div class="informacao-pagina">
             <div class="contato-principal">
-                @component('site.layouts.components.form_contato.blade.php')
+                @component('site.layouts.components.form_contato', ['classe'=> 'borda-preta'])
                 @endcomponent
             </div>
         </div>
